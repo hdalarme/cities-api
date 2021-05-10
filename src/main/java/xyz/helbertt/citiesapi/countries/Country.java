@@ -1,4 +1,4 @@
-package xyz.helbertt.citiesapi.countries.country;
+package xyz.helbertt.citiesapi.countries;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
