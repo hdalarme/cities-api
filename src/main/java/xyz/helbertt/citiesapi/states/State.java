@@ -1,4 +1,4 @@
-package xyz.helbertt.citiesapi.staties;
+package xyz.helbertt.citiesapi.states;
 
 import java.util.List;
 import javax.persistence.Basic;

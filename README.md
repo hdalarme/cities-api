@@ -20,4 +20,9 @@ docker run -it --rm --net=host -v %cd%:/tmp postgres /bin/bash
 psql -h localhost -U postgres_user_city cities -f /tmp/pais.sql
 psql -h localhost -U postgres_user_city cities -f /tmp/estado.sql
 psql -h localhost -U postgres_user_city cities -f /tmp/cidade.sql
+
+psql -h localhost -U postgres_user_city cities
+
+CREATE EXTENSION cube; 
+CREATE EXTENSION earthdistance;
 ```

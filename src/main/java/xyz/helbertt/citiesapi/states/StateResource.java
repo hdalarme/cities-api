@@ -1,16 +1,13 @@
-package xyz.helbertt.citiesapi;
+package xyz.helbertt.citiesapi.states;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import xyz.helbertt.citiesapi.repository.StateRepository;
-import xyz.helbertt.citiesapi.staties.State;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/staties")
+@RequestMapping("/states")
 public class StateResource {
 
 
@@ -21,7 +18,7 @@ public class StateResource {
     }
 
     @GetMapping
-    public List<State> staties() {
+    public List<State> states() {
         return repository.findAll();
     }
 
